@@ -1,46 +1,51 @@
 #include<stdio.h>
+#include<stdlib.h>
 
-void an_1() {
-    printf("Там где ты учился кодить, я преподавал!");
+void an_3() {
+    printf("Там где ты учился кодить, я преподавал!\n");
 }
 void an_2() {
-    printf("Встань, погуляй, выдохни и попробуй еще раз))");
+    printf("Встань, погуляй, выдохни и попробуй еще раз))\n");
 }
-void an_3() {
-    printf("Тащи что нибудь потяжелее!");
+void an_1() {
+    printf("Тащи что нибудь потяжелее!\n");
 }
 void an_4() {
-    printf("Мясаааа мнеее))");
+    printf("Мясаааа мнеее))\n");
 }
 void an_5() {
-    printf("Креативненько!)");
+    printf("Креативненько!)\n");
 }
 void an_6() {
-    printf("Давай! Я верю в тебя!");
+    printf("Давай! Я верю в тебя!\n");
 }
 void an_7() {
-    printf("Крашни меня полностью!!!");
+    printf("Крашни меня полностью!!!\n");
 }
 void an_8() {
-    printf("Ты не устал там?))");
+    printf("Ты не устал там?))\n");
 }
 void an_9() {
-    printf("Я брат Vertera! Сынок!");
+    printf("Я брат Vertera! Сынок!\n");
 }
 void an_0() {
-    printf("Может тебе сменить профессию?");
+    printf("Может тебе сменить профессию?\n");
 }
 
 void end() {
-    printf("Слабо, да?)) Подписывайся телега @pushchill (там залил пару учебников и ссылка на основной чат)\n Всем удачи на экзамене! От dpaulita и awoolfie\n Не будем теряться после интенсива;)");
+    printf("Слабо, да?)) Подписывайся телега @pushchill (там залил пару учебников и ссылка на основной чат)\n Всем удачи на экзамене! От dpaulita и awoolfie\n Не будем теряться после интенсива;)\n");
 }
 
 void start() {
-    printf("`7MMF' `YMM' `7MM'''Mq.        db       .M'''bgd `7MMF'  `7MMF'`7MM'''YMM  `7MM'''Mq.\n
-           MM   .M'     MM   `MM.      ;MM:     ,MI    "Y   MM      MM    MM    `7    MM   `MM.\n
-           MM .d"       MM   ,M9      ,V^MM.    `MMb.       MM      MM    MM   d      MM   ,M9\n
-           MMMMM.       MMmmdM9      ,M  `MM      `YMMNq.   MMmmmmmmMM    MMmmMM      MMmmdM9\n
-           MM  VMA      MM  YM.      AbmmmqMA   .     `MM   MM      MM    MM   Y  ,   MM  YM.\n
-           MM   `MM.    MM   `Mb.   A'     VML  Mb     dM   MM      MM    MM     ,M   MM   `Mb.\n
-         .JMML.   MMb..JMML. .JMM..AMA.   .AMMA.P"Ybmmd"  .JMML.  .JMML..JMMmmmmMMM .JMML. .JMM.\n");
+    FILE *fp;
+    char str[128];
+    if ((fp=fopen("build/start.txt", "r") )==NULL) {
+        printf("Cannot open file.\n");
+    exit (1);
+    }
+    while(!feof (fp)) {
+    if (fgets(str, 126, fp))
+    printf("%s", str);
+}
+fclose(fp);
 }

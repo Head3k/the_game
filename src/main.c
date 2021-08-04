@@ -12,18 +12,17 @@ void output();
 int flag = 0;
 
 int main() {
+	start();
 	menu();
-	//printf("%s\n", enter);     // проверка вывода, потом можно удалить
+	end();
 	return 0;
 }
 
 void menu() {
-	start();
 	while (flag < 10) {
 		input(enter);                // вызов функции для ввода строки
 		output();
 	}
-	end();
 }
 
 void input(char *enter) {
@@ -33,8 +32,7 @@ void input(char *enter) {
 void output() {
 	flag++;
 	srand(time(NULL));
-	int answer = rand() % 10;
-	switch (answer) {
+	switch (flag) {
 	case 0:
 		an_0();
 		menu();
