@@ -36,10 +36,11 @@ void end() {
 }
 
 void start() {
-    printf("██╗░░██╗██████╗░░█████╗░░██████╗██╗░░██╗███████╗██ ████╗░\n
-    ██║░██╔╝██╔══██╗██╔══██╗██╔════╝██║░░██║██╔ = ═══╝██╔═██╗\n
-    █████═╝░██████╔╝█████████████╗░██████ █║█████╗░░██████╔╝\n
-    ██╔═██╗░██╔══██╗██╔═██║░╚═══██╗ ██╔══██║██╔══╝░░██╔══██╗\n
-    ██║░╚██╗██║░░██║██║░░██║██ ████╔╝██║░░██║███████╗██║░░██║\n
-    ╚═╝░░╚═╝╚═╝░░╚═╝╚═╝░ ░╚═╝╚═════╝░╚═╝░░╚═╝╚══════╝╚═╝░░╚═╝\n")
+    printf("`7MMF' `YMM' `7MM"""Mq.        db       .M"""bgd `7MMF'  `7MMF'`7MM"""YMM  `7MM"""Mq.\n
+           MM   .M'     MM   `MM.      ;MM:     ,MI    "Y   MM      MM    MM    `7    MM   `MM.\n
+           MM .d"       MM   ,M9      ,V^MM.    `MMb.       MM      MM    MM   d      MM   ,M9\n
+           MMMMM.       MMmmdM9      ,M  `MM      `YMMNq.   MMmmmmmmMM    MMmmMM      MMmmdM9\n
+           MM  VMA      MM  YM.      AbmmmqMA   .     `MM   MM      MM    MM   Y  ,   MM  YM.\n
+           MM   `MM.    MM   `Mb.   A'     VML  Mb     dM   MM      MM    MM     ,M   MM   `Mb.\n
+         .JMML.   MMb..JMML. .JMM..AMA.   .AMMA.P"Ybmmd"  .JMML.  .JMML..JMMmmmmMMM .JMML. .JMM.\n")
 }
