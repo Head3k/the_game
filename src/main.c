@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#include"print.h"
 
 #define NMAX 550
 
@@ -28,6 +29,7 @@ void input(char *enter) {
 }
 
 void output() {
+	flag++;
 	srand(time(NULL));
 	int answer = rand() % 10;
 	switch (answer) {
@@ -74,5 +76,4 @@ void output() {
 	default:
 		break;
 	}
-	flag++;
 }
